@@ -1,0 +1,20 @@
+body {
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

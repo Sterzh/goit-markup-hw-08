@@ -1,0 +1,55 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+  height: 50px;
+  font-family: var(--primary-font);
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-white);
+    background-color: var(--accent-color-background);
+  }
+}
+
+// .button:hover,
+// .button:focus {
+//   color: var(--text-color-white);
+//   background-color: var(--accent-color-background);
+// }
+
+/*modal-button*/
+
+.button--size {
+  width: 200px;
+  height: 50px;
+}
+
+/*footer-button*/
+
+.button--size {
+  width: 200px;
+  height: 50px;
+}
+
+.button__icon {
+  margin-left: 12px;
+  fill: currentColor;
+}

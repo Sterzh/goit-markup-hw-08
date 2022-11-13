@@ -1,0 +1,28 @@
+/* основной колір тексту #212121 */
+/* другорядний колір тексту #000000 */
+/* основний колір фону #FFFFFF */
+/* другорядний колір фону #F5F4FA */
+/* темный колір фону #2F303A */
+/* колір акцента #2196F3 */
+/* основной */
+
+:root {
+  --accent-color: #2196f3;
+  --primary-text-color: #212121;
+  --accent-color-background: #1586e2;
+  --accent-color-background-description: rgba(33, 150, 243, 0.9);
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --dark-background-color: #2f303a;
+  --title-text-color: #757575;
+  --text-color-white: #ffffff;
+  --text-color-black: #000000;
+  --text-color-footer: rgba(255, 255, 255, 0.6);
+  --border-terms-color: #212121;
+  --border-portfolio-card: #eeeeee;
+  --border-portfolio-header: #ececec;
+  --social-icon-color: #afb1b8;
+  --social-icon-white-color: #ffffff;
+  --primary-font: 'Roboto';
+  --logo-font: 'Raleway';
+}
