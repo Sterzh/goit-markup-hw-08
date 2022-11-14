@@ -523,6 +523,9 @@ img {
 
 .header__menu-button {
   margin-left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .header__menu-button {

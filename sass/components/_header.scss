@@ -31,7 +31,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-  
 }
 
 .site-nav__item {
@@ -79,6 +78,14 @@
 
 /* Contacts-nav */
 
+// .contacts-nav {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+//   padding-left: 0;
+//   margin-left: auto;
+// }
+
 .contacts-nav {
   display: none;
   align-items: center;
@@ -89,7 +96,6 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-
 }
 
 .contacts-nav__item {
@@ -129,6 +135,9 @@
 
 .header__menu-button {
   margin-left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
     display: none;
