@@ -43,7 +43,16 @@
 /* Footer social */
 
 .footer-social {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .foter-social__text {
