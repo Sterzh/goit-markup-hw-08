@@ -841,6 +841,20 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu_position {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .site-nav-mobile__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,7 +865,6 @@ img {
           flex-direction: column;
   padding: 0;
   gap: 32px;
-  margin-bottom: 302px;
 }
 .site-nav-mobile__link {
   text-decoration: none;
@@ -891,7 +904,6 @@ img {
           flex-direction: column;
   gap: 32px;
   padding-left: 0;
-  margin-bottom: 64px;
 }
 .contacts-nav-mobile__link {
   display: -webkit-box;
@@ -913,6 +925,11 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 378px) {
+  .contacts-nav-mobile__link {
+    font-size: 26px;
+  }
+}
 .contacts-nav-mobile__link:hover, .contacts-nav-mobile__link:focus {
   color: var(--accent-color);
 }
@@ -932,6 +949,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-list-mobile__item {
@@ -991,6 +1010,11 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: calc(100% - 30px);
   }
 }
 
@@ -1202,6 +1226,9 @@ img {
 }
 
 .conditions__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 35px;
   font-weight: 400;
   font-size: 12px;
@@ -1215,11 +1242,26 @@ img {
     line-height: 1.71;
   }
 }
+@media screen and (max-width: 480px) {
+  .conditions__label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3px;
+  }
+}
 
 .conditions__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 5px;
+}
+@media screen and (max-width: 480px) {
+  .conditions__link {
+    margin-left: 0;
+  }
 }
 
 .portfolio {
