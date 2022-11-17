@@ -374,7 +374,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    gap: 50px;
+    gap: 165px;
   }
 }
 @media screen and (min-width: 768px) {
