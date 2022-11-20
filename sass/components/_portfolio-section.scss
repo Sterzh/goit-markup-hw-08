@@ -166,5 +166,9 @@
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 }
