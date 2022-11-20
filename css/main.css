@@ -355,6 +355,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__div-address {
+    margin-right: 165px;
     margin-bottom: 0px;
   }
 }
@@ -362,6 +363,7 @@ img {
   .footer__div-address {
     display: block;
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
