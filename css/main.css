@@ -317,7 +317,30 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__div {
+@media screen and (min-width: 768px) {
+  .footer__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__div {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__div {
+    margin-bottom: 0;
+  }
+}
+.footer__div-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,12 +354,12 @@ img {
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer__div {
+  .footer__div-address {
     margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__div {
+  .footer__div-address {
     display: block;
     margin-bottom: 0;
   }
@@ -363,25 +386,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-tablet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    gap: 165px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-tablet {
-    margin-bottom: 60px;
-  }
-}
 .address {
   margin-top: 20px;
 }
@@ -740,15 +744,15 @@ img {
 /* Hero */
 .hero {
   background-color: var(--dark-background-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Hero.jpg);
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -758,6 +762,11 @@ img {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/Hero@2x.jpg);
   }
 }
 .hero__title {
@@ -1356,15 +1365,13 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  margin: 0 -30px -30px 0;
+  gap: 30px;
 }
 
 .portfolio-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
-  margin-bottom: 30px;
   width: 450px;
   border: 1px solid #eeeeee;
 }
@@ -1573,8 +1580,9 @@ img {
     width: 270px;
   }
 }
-.team-list__item__images {
-  width: 100%;
+.team-list__images {
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-list__div {
   padding: 30px;

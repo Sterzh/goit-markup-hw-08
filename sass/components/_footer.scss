@@ -4,6 +4,22 @@
   padding-bottom: 60px;
 
   &__div {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__div-address {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,22 +46,6 @@
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: baseline;
-  }
-}
-
-.footer-tablet {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 165px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
   }
 }
 
