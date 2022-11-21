@@ -30,13 +30,14 @@
     letter-spacing: 0.06em;
     color: var(--text-color-white);
     margin-bottom: 30px;
-    max-width: 696px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
+      max-width: 696px;
     }
   }
 }

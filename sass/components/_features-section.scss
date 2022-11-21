@@ -1,7 +1,7 @@
 /* Features */
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -33,8 +33,11 @@
   }
 
   &__list {
+    margin-bottom: 30px;
+
     @media screen and (min-width: 768px) {
       width: 354px;
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -64,7 +67,7 @@
     margin-bottom: 10px;
 
     @media screen and (min-width: 768px) {
-      text-align: center;
+      text-align: start;
     }
   }
 
@@ -73,7 +76,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
